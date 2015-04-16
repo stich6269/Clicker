@@ -8,8 +8,8 @@ body{
 
 #wrapper{
     position: absolute;
-    left: 30%;
-    top: 5%;
+    left: 0%;
+    top: 0%;
     display: block;
     margin: 0;
     padding: 0;
@@ -31,7 +31,7 @@ body{
     top: 0;
     display: inline-block;
     height: 600px;
-    width: 300px;
+    width: 200px;
     background-color: #4373de;
 }
 

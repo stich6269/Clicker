@@ -39,19 +39,17 @@ Drawer.prototype.createGame = function () {
         containerElem.id = 'wrapper';
         parentElem.appendChild(containerElem);
         this.createCanvas(containerElem);
-
-        staticElem = document.createElement('DIV');
-        staticElem.id = 'static';
-        containerElem.appendChild(staticElem);
-
     }
+
+    staticElem = document.createElement('DIV');
+    staticElem.id = 'static';
+    containerElem.appendChild(staticElem);
 };
 
 Drawer.prototype.reDrawCells = function (arr) {
     var ctx = this.canvasElem.getContext('2d'),
         column,
         cell;
-
 
     ctx.clearRect(0, 0, this.canvasWidth, this.canvasHeight);
 
@@ -72,7 +70,6 @@ Drawer.prototype.reDrawCells = function (arr) {
 
     }
 };
-
 
 Drawer.prototype.drawStatic = function () {
     var parentElement = document.getElementById('static'),
@@ -95,7 +92,6 @@ Drawer.prototype.drawStatic = function () {
             this.statisticElements[key] = liElem;
         }
     }
-console.log(this.statisticElements);
     parentElement.appendChild(ulElem);
 };
 
@@ -110,11 +106,3 @@ Drawer.prototype.updateStatistic = function (statistic) {
         }
     }
 };
-
-
-
-
-
-
-
-
