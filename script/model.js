@@ -7,7 +7,7 @@ function Field () {
     this.column = 20;
     this.minCellSet = 3;
     this.cellsArr = [];
-    this.cellColorsAmount = 2;
+    this.cellColorsAmount = 4;
 }
 
 function Cell (x, y, colorsAmount){
